@@ -10,14 +10,16 @@ export class FeedbackOptions extends Component {
             <div>
                 {options.map(
                     (option, index, options) => (
-                        <OptionBtn onClick={() => onLeaveFeedback(option)} key={options[index]}>
+                        <OptionBtn 
+                            onClick={() => onLeaveFeedback(option)} 
+                            key={options[index]}
+                        >
                             {option}
                         </OptionBtn>
                     )
                 )}
             </div>
         )
-
     }
 } 
 
